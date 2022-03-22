@@ -1,0 +1,238 @@
+.logReg, .mainPage, .allTitles, .profilePage, .oneTitle {
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+}
+
+.logReg {
+  background-image: url("https://wallpaperaccess.com/full/3383028.png");
+  /* display:flex;
+  justify-content: space-evenly;
+  padding-top: 200px; */
+}
+
+.logRegTitle {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  font-size: xx-large;
+}
+
+.logRegForms {
+  display:flex;
+  justify-content:space-evenly;
+  padding-top:75px;
+}
+
+.errorText {
+  color: purple;
+  font-weight: bold;
+  font-size: small;
+}
+
+
+.logRegQuote {
+  display:flex;
+  justify-content:center; 
+  padding-top: 100px;
+  color: white;
+}
+
+header {
+  color: black;
+  font-weight: 500;
+  font-size:larger;
+}
+
+/* .profileForm {
+
+} */
+
+
+form {
+  border: 2px solid black;
+  padding: 10px;
+}
+
+input, textarea {
+  opacity: .4;
+  display: flex;
+  justify-content: flex-end;
+}
+
+textarea {
+  width: 150%;
+  height: 125px;
+}
+
+.regSub {
+  padding-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  /* border-radius: 25%; */
+}
+
+button {
+  /* border-radius: 50%; */
+  padding: 8px;
+  border-color: black;
+  background-color: green;
+}
+
+button:hover {
+  background-color: brown;
+  color: white;
+}
+
+button:active {
+  background-color: red;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+.mainPage {
+  background-image: url("https://wallpaperaccess.com/full/397319.jpg");
+  
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+}
+
+/* link in open field */
+/* https://i.pinimg.com/originals/2a/6a/ba/2a6aba2bc263643327323b6b4176cf48.jpg */
+
+/* link in open field night-time */
+/* https://wallpaper-house.com/data/out/8/wallpaper2you_253122.jpg */
+
+/* majora mask -- possible logout */
+/* https://images6.alphacoders.com/375/thumb-1920-375578.jpg */
+
+/* sword, shield, logo */
+/* https://wallpaper-house.com/data/out/8/wallpaper2you_253098.jpg */
+
+/* https://wallpaper.dog/large/20484908.jpg */
+
+/* breath of the wild link and lynel */
+/* https://wallpaperaccess.com/full/1101080.jpg */
+
+/* breath of the wild main */
+/* https://free4kwallpapers.com/uploads/originals/2019/06/18/the-legend-of-zelda-high-quality-k-pc--wallpaper.jpg */
+
+/* link and shattered castle */
+/* https://images4.alphacoders.com/103/1033513.jpg */
+
+/* link and zelda on hill */
+/* https://wallpaperaccess.com/full/4607726.jpg */
+
+/* desktop wallpaper */
+/* https://external-preview.redd.it/cex0iXYBxrWLY5_WKlAKAW98jvc5u4fx6bRTuz5ta3o.jpg?auto=webp&s=f9c167e31a8c7317e5a7f32d7c0b4145b8a2754f */
+
+/* https://www.wallpaperflare.com/static/85/22/472/video-games-zelda-link-the-legend-of-zelda-breath-of-the-wild-wallpaper.jpg */
+
+.allTitles {
+  background-image: url("https://wallpaper.dog/large/20484908.jpg");
+  background-size: cover;
+}
+
+.zeldaList {
+  display: flex;
+  
+  /* align-items: baseline; */
+  justify-content: center;
+  padding-top: 15px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.profilePage {
+  background-image: url("https://wallpaperaccess.com/full/2994909.jpg");
+  background-size: cover;
+}
+
+.deleteButton, .updateButton {
+  background-color: #238a8e
+}
+.updateButton{
+  background-color: #238a8e
+}
+
+.updateButton:hover {
+  background-color: green;
+}
+
+.profileInfo {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  column-count: 2;
+  padding: 50px;
+  color: white;
+  /* border: 2px solid aquamarine; */
+  height: 200px;
+  border: none;
+}
+
+
+.oneTitle {
+  background-image: url("https://i.pinimg.com/originals/2a/6a/ba/2a6aba2bc263643327323b6b4176cf48.jpg");
+  background-size: cover;
+}
+
+.titleInfo {
+  display: flex;
+  justify-content: space-evenly;
+  column-count: 2;
+}
+
+.titleLabel {
+  font-size: larger;
+  font-weight: 500;
+  color: brown
+}
+
+
+
+/* majora mask image */
+/* https://images6.alphacoders.com/375/thumb-1920-375578.jpg */
+
+
+/* 
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */

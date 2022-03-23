@@ -6,7 +6,7 @@ const CommentSchema = new mongoose.Schema({
 
     content: {
         type: String,
-        required: [true, "Words must be used to leave wisdom."],
+        // required: [true, "Words must be used to leave wisdom."],
         minlength: [3, "Must be at least 3 characters"]
     },
 
@@ -14,10 +14,10 @@ const CommentSchema = new mongoose.Schema({
     //     type: Number
     // },
 
-    author: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "User"
-    }
+    // author: {
+    //     type: mongoose.Schema.Types.ObjectId,
+    //     ref: "User"
+    // }
 
     // game: {
     //     type: String,

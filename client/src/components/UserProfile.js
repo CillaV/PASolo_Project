@@ -85,7 +85,11 @@ const UserProfile = (props) => {
 
 
     const deleteProfile = (profileId) =>{
-        axios.delete(`http://localhost:8000/api/users/${profileId}`)
+        axios.delete(`http://localhost:8000/api/users/${profileId}`,
+        {
+            withCredentials: true
+        }
+        )
             .then((res)=>{
                 console.log(res)
                 console.log(res.data)

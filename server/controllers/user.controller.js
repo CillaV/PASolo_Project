@@ -132,9 +132,10 @@ module.exports = {
         
         const decodedJwt = jwt.decode(req.cookies.usertoken, {complete: true})
 
-        User.deleteOne({_id: req.params.id})
+        User.findOneAndDelete({_id: req.params.id})
             .then((deletedUser)=>{
                 console.log(deletedUser)
+                res.clearCookie("usertoken")
                 res.json("Player has been terminated.")
             })
             .catch((err)=>{

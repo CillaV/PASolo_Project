@@ -7,17 +7,17 @@ module.exports = {
 
     
     createComment: (req, res) =>{
-        // const newCommentObj = new Comment(req.body)
+        const newCommentObj = new Comment(req.body)
 
-        // const decodedJWT = jwt.decode(req.cookies.usertoken, {
-        //     complete: true
-        // })
+        const decodedJWT = jwt.decode(req.cookies.usertoken, {
+            complete: true
+        })
 
-        // newCommentObj.author = decodedJWT.payload.id
+        newCommentObj.author = decodedJWT.payload.id
         // newCommentObj.user = req.jwtpayload.id
         
-        Comment.create(req.body)
-        // newCommentObj.save()
+        // Comment.create(req.body)
+        newCommentObj.save()
         .then((newComment)=>{
             console.log(newComment)
             res.json(newComment)
@@ -30,7 +30,7 @@ module.exports = {
 
     findAllComments: (req, res) =>{
         Comment.find()
-        // .populate("author", "username email" )
+        .populate("author", "username email" )
         .then((allComments)=>{
             console.log(allComments)
             res.json(allComments)

@@ -14,10 +14,10 @@ const CommentSchema = new mongoose.Schema({
     //     type: Number
     // },
 
-    // author: {
-    //     type: mongoose.Schema.Types.ObjectId,
-    //     ref: "User"
-    // }
+    author: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "User"
+    }
 
     // game: {
     //     type: String,

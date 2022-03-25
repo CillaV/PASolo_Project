@@ -34,8 +34,8 @@ module.exports = {
                 }
                 else{
                     // email found, compare password
-                    bcrypt.compare(req.body.password, userRecord.password)
-                        .then((isPasswordValid)=>{
+                    bcrypt.compare(req.body.password, userRecord.password) // is boolean t/f
+                        .then((isPasswordValid)=>{ //  returns isPasswordValid
                             // password valid
                             if(isPasswordValid) {
                                 console.log("password is valid")
@@ -66,6 +66,10 @@ module.exports = {
                                 })
 
                             }
+                        })
+                        .catch((err)=>{
+                            console.log(err)
+                            res.status(400).json({message: "Invalid Entry"})
                         })
                 }
             })
@@ -103,9 +107,9 @@ module.exports = {
     },
 
     userLoggedIn: (req, res) =>{
-        const decodedJwt = jwt.decode(req.cookies.usertoken, {complete: true})
-        User.findOne({_id: decodedJwt.payload.id})
-        // User.findOne({_id: req.jwtpayload.id})
+        // const decodedJwt = jwt.decode(req.cookies.usertoken, {complete: true})
+        // User.findOne({_id: decodedJwt.payload.id})
+        User.findOne({_id: req.jwtpayload.id})
             .then((user)=>{
                 console.log(user)
                 res.json(user)
